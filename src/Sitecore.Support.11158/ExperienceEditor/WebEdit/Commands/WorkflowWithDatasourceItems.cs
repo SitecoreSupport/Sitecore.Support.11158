@@ -23,10 +23,10 @@ namespace Sitecore.Support.ExperienceEditor.WebEdit.Commands
 
         #region FIX for SXA "Composites" components
         if (filterSameItem.Children.Count > 0
-        && filterSameItem.TemplateID.ToString().Equals("{705CC8B3-BDE5-4CB3-BF1C-E455A2A36EF1}") // /sitecore/templates/Feature/Experience Accelerator/Composites/Datasource/Accordion/Accordion 
+        && (filterSameItem.TemplateID.ToString().Equals("{705CC8B3-BDE5-4CB3-BF1C-E455A2A36EF1}") // /sitecore/templates/Feature/Experience Accelerator/Composites/Datasource/Accordion/Accordion 
         || filterSameItem.TemplateID.ToString().Equals("{ADD22F05-6B4C-4344-95AD-9A1A9BA6A216}") //	/sitecore/templates/Feature/Experience Accelerator/Composites/Datasource/Carousel/Carousel 
         || filterSameItem.TemplateID.ToString().Equals("{5EF07850-4C04-4B83-9DAF-EFD752CFABA8}") //	/sitecore/templates/Feature/Experience Accelerator/Composites/Datasource/Flip/Flip
-        || filterSameItem.TemplateID.ToString().Equals("{F26A9560-CCF1-48C5-9542-800E837CAF7A}")) // /sitecore/templates/Feature/Experience Accelerator/Composites/Datasource/Tabs/Tabs 
+        || filterSameItem.TemplateID.ToString().Equals("{F26A9560-CCF1-48C5-9542-800E837CAF7A}"))) // /sitecore/templates/Feature/Experience Accelerator/Composites/Datasource/Tabs/Tabs 
         {
           foreach (Item child in filterSameItem.Children)
           {
